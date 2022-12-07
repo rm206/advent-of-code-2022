@@ -1,0 +1,34 @@
+$ cd /
+$ ls
+dir fwbjchs
+dir hmnpr
+dir jtrbrcjl
+dir lcgv
+dir ldqc
+dir vrvl
+$ cd fwbjchs
+$ ls
+154619 wqdlv.mdw
+21648 wvbnz
+$ cd ..
+$ cd hmnpr
+$ ls
+178623 rftqqsrp.bfm
+$ cd ..
+$ cd jtrbrcjl
+$ ls
+dir nmbfwc
+dir whqb
+$ cd nmbfwc
+$ ls
+242645 lcgv
+256365 wdzw.drg
+$ cd ..
+$ cd whqb
+$ ls
+161522 mrqgpv.gsm
+48062 vpsgcl.gfh
+$ cd ..
+$ cd ..
+$ cd lcgv
+$ ls
