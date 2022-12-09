@@ -8,11 +8,12 @@ for curr in input.split("\n"):
 move_dict = {'R' : [0, 1], 'L' : [0, -1], 'U' : [1, 0], 'D' : [-1, 0]}
 visited = set({(0,0)})
 
-def touching(t : int, h : int):
+def touching(t : int, h : int) -> bool:
+    global t_pos
     return (abs(t_pos[t][0] - t_pos[h][0]) <= 1
             and abs(t_pos[t][1] - t_pos[h][1]) <= 1)
 
-def update_tail(t, h):
+def update_tail(t : int, h : int) -> None:
     global t_pos
 
     diff_x = t_pos[h][0] - t_pos[t][0]
@@ -51,7 +52,7 @@ def update_tail(t, h):
         return
 
 
-def update_head(move_dir, move_freq):
+def update_head(move_dir : str, move_freq : int) -> None:
     global t_pos
     move_x, move_y = move_dict[move_dir]
     for _ in range(move_freq):
@@ -62,7 +63,7 @@ def update_head(move_dir, move_freq):
                 update_tail(tail_id, tail_id-1)
             visited.add(tuple(t_pos[9]))
 
-def execute_moves():
+def execute_moves() -> None:
     for move in moves:
         update_head(move[0], move[1])
 
